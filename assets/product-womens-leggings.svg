@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" role="img" aria-label="Graphic plate for women's leggings and bras">
+  <rect width="800" height="600" fill="#E7EFE3"/>
+  <circle cx="650" cy="110" r="150" fill="#D5E2D2"/>
+  <rect x="86" y="168" width="360" height="250" rx="40" fill="#F7F3EA"/>
+  <rect x="150" y="214" width="330" height="210" rx="34" fill="#C5D5C2"/>
+  <rect x="210" y="262" width="250" height="28" rx="14" fill="#F3EEE4"/>
+  <rect x="500" y="188" width="78" height="280" rx="39" fill="#1B3A2B"/>
+  <rect x="592" y="230" width="64" height="220" rx="32" fill="#3F6248"/>
+  <path d="M78 86c28-18 52-8 66 16-26 10-50 8-66-16Z" fill="#1B3A2B"/>
+  <path d="M92 96c22 4 40 12 54 22" stroke="#F3EEE4" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="700" cy="470" r="8" fill="#9C7A45"/>
+</svg>
