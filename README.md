@@ -1,12 +1,20 @@
 # Hansburg
 
-Marketing site for **杭州汉宝贸易有限公司** (Hansburg), an apparel exporter in Hangzhou. The public page covers the company, product programs, and contact. English is the primary language. The Chinese company name appears where it is the legal name.
+Buyer site for **杭州汉宝贸易有限公司** (Hansburg), an apparel export house in Hangzhou. English is the primary language. The Chinese company name appears in About and the footer, where it is the legal name.
 
-The layout follows the Inazuma Tailwind company landing page (navigation, hero, about, services, contact, footer). Pricing, team, testimonials, and the intro video from that template are not used.
+The site is static HTML, CSS, and JS for GitHub Pages at `/hansburg-website/`. Links and assets are relative, so the same files open locally and on a project site. `.nojekyll` is included so Pages does not skip asset files.
+
+## Pages
+
+| Page | File | What it covers |
+| --- | --- | --- |
+| Home | `index.html` | Wholesale and OEM hero, trade strip, flagship Eco bamboo, program index |
+| Products | `products.html` | Catalog: underwear, basics, loungewear, kids, hang tags |
+| Capabilities | `capabilities.html` | FOB Shanghai, OTIF, packaging readiness, sampling to shipment |
+| About | `about.html` | Company name, Hangzhou base, export offer |
+| Contact | `contact.html` | Carrie, `carrie@hansburg.com.cn`, mailto form |
 
 ## Open locally
-
-The built stylesheet is already in the repository, so a Node install is optional.
 
 From this folder:
 
@@ -16,53 +24,36 @@ python3 -m http.server 43123
 
 Then open [http://127.0.0.1:43123](http://127.0.0.1:43123).
 
-Or, after `npm install`:
+Opening `index.html` directly also works, because styles, fonts, and images are local files. No build step is required.
 
-```bash
-npm start
-```
+## Styles
 
-Opening `index.html` directly in a browser also works, because styles, fonts, and images are local files.
-
-## Edit styles
-
-Colors and type live in `tailwind.config.js`. Markup is `index.html`. Source CSS is `src/css/tailwind.css`.
-
-```bash
-npm install
-npm run build:css
-```
-
-`npm run watch:css` rebuilds while you edit. Commit `assets/css/main.css` with the HTML so the site still opens without a build step.
+`assets/css/main.css` is the existing compiled sheet (type, color, buttons, layout utilities). `assets/css/site.css` holds the multi-page pieces: navigation state, trust strip, catalog rows, and the contact form. Edit those files directly and commit them with the HTML.
 
 ## Images
-
-Canva exports are wired in `index.html`. The logo file was trimmed to the artwork and its paper was matched to the page cream so the header does not show a white box.
 
 | File | Used for |
 | --- | --- |
 | `assets/logo.jpg` | Header lockup |
-| `assets/favicon.png` | Browser icon, cropped from the logo monogram |
-| `assets/product-eco-bamboo.jpg` | Hero accent and the eco bamboo card |
+| `assets/favicon.png` | Browser icon |
+| `assets/product-eco-bamboo.jpg` | Hero and the eco bamboo program |
 | `assets/product-mens.jpg` | Men’s boxers and invisible briefs |
-| `assets/product-pajamas.jpg` | Pajamas and loungewear |
+| `assets/product-pajamas.jpg` | Loungewear and pajamas |
+| `assets/product-womens-basics.svg` | Flat graphic for women’s briefs, wireless bras, and seamless basics |
 | `assets/product-womens-leggings.svg` | Flat graphic for leggings and bras |
 | `assets/product-kids-underwear.svg` | Flat graphic for kids underwear |
 | `assets/product-hang-tags.svg` | Flat graphic for hang tags and packaging |
 
-Leggings, kids, and packaging do not have photographs yet. Those cards use sage and cream SVG plates, not generated photos. Replace a plate by swapping the `src` in `index.html` for a new file in `assets/` and keeping the card copy.
-
-## Deploy
-
-Any static host can serve this folder. For GitHub Pages, publish the branch root. `.nojekyll` is included so Pages does not skip asset files. No build is required if `assets/css/main.css` is already committed.
+Photographs are the eco bamboo, men’s, and pajama images. The other programs use sage and cream SVG plates, in the same graphic family. They are not factory photos.
 
 ## Contact on the page
 
 - Email: carrie@hansburg.com.cn
 - Web: https://hansburg.com.cn
 - Location: Hangzhou, China
+- Terms: FOB Shanghai
 
-The contact form opens the visitor’s email app with those fields. It does not post to a server. Phone number and street address are omitted on purpose.
+The contact form opens the visitor’s email app. It does not post to a server. Phone number and street address are omitted on purpose. An enquiry link can prefill market, buyer type, and program with a query string.
 
 ## Credit
 
