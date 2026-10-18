@@ -1,0 +1,359 @@
+/* Multi-page components. Extends assets/css/main.css; no rebuild step. */
+
+.site-logo {
+  height: 3.75rem;
+  width: auto;
+}
+
+@media (min-width: 640px) {
+  .site-logo {
+    height: 4.5rem;
+  }
+}
+
+.site-nav {
+  gap: 1.15rem;
+}
+
+@media (min-width: 1180px) {
+  .site-nav {
+    gap: 1.65rem;
+  }
+}
+
+.nav-link[aria-current="page"] {
+  color: #1b3a2b;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .site-nav .nav-link[aria-current="page"] {
+    box-shadow: inset 0 -2px 0 #9c7a45;
+  }
+}
+
+.noscript-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding: 0 0 0.9rem;
+  font-size: 0.95rem;
+}
+
+.noscript-nav a {
+  color: #1b3a2b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 1024px) {
+  .noscript-nav {
+    display: none;
+  }
+}
+
+.display {
+  font-family: Fraunces, Palatino Linotype, Palatino, Songti SC, Noto Serif SC, Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  font-size: 2.35rem;
+  color: #1b3a2b;
+}
+
+@media (min-width: 640px) {
+  .display {
+    font-size: 3.15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .display {
+    font-size: 3.45rem;
+  }
+}
+
+.display em {
+  font-style: italic;
+  font-weight: 400;
+  color: #3f6248;
+}
+
+.page-hero,
+.band {
+  background: #e6dfd1;
+}
+
+.page-hero {
+  border-bottom: 1px solid #ddd6c8;
+}
+
+.trust {
+  background: #10241b;
+  color: #f3eee4;
+}
+
+.trust-grid {
+  display: grid;
+  margin: 0;
+}
+
+.trust-grid div {
+  padding: 1.15rem 0;
+}
+
+.trust-grid div + div {
+  border-top: 1px solid rgba(243, 238, 228, 0.16);
+}
+
+.trust-grid dt {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d5e0d2;
+}
+
+.trust-grid dd {
+  margin-top: 0.28rem;
+  font-family: Fraunces, Palatino Linotype, Palatino, Songti SC, Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trust-grid div {
+    padding: 1.4rem 1.75rem;
+  }
+
+  .trust-grid div + div {
+    border-top: 0;
+    box-shadow: inset 1px 0 0 rgba(243, 238, 228, 0.16);
+  }
+
+  .trust-grid div:first-child {
+    padding-left: 0;
+  }
+
+  .trust-grid div:last-child {
+    padding-right: 0;
+  }
+}
+
+.kicker {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2f4a38;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 0.85rem;
+  border-radius: 9999px;
+  padding: 0.28rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: #1b3a2b;
+  color: #f3eee4;
+}
+
+.badge-quiet {
+  background: transparent;
+  color: #1b3a2b;
+  border: 1px solid rgba(27, 58, 43, 0.28);
+}
+
+.media-frame {
+  border-radius: 1.5rem;
+  background: #fbf8f3;
+  overflow: hidden;
+  border: 1px solid #ddd6c8;
+}
+
+.media-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-frame.crop {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3eee4;
+}
+
+.media-frame.crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.program-grid {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .program-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 3.5rem;
+  }
+}
+
+.catalog-intro {
+  padding-top: 2.75rem;
+}
+
+.catalog {
+  padding-bottom: 2rem;
+}
+
+.program {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 3.25rem 0;
+  border-top: 1px solid #ddd6c8;
+}
+
+.program:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 900px) {
+  .program {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 3.25rem;
+    padding: 4rem 0;
+  }
+
+  .program.reverse .program-copy {
+    order: -1;
+  }
+}
+
+.program-pending {
+  border-top-style: dashed;
+  border-top-color: rgba(63, 98, 72, 0.45);
+}
+
+.spec {
+  margin-top: 1.5rem;
+}
+
+.spec div {
+  display: grid;
+  grid-template-columns: 7.25rem minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid #ddd6c8;
+}
+
+.spec dt {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5a534c;
+  padding-top: 0.2rem;
+}
+
+.spec dd {
+  color: #241f1a;
+  line-height: 1.5;
+}
+
+.note {
+  border: 1px solid #ddd6c8;
+  border-left: 3px solid #9c7a45;
+  background: #fbf8f3;
+  border-radius: 1rem;
+  padding: 1.2rem 1.25rem 1.2rem 1.15rem;
+}
+
+.note p + p {
+  margin-top: 0.75rem;
+}
+
+.steps {
+  display: grid;
+  gap: 2rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.step-index {
+  font-family: Fraunces, Palatino Linotype, Palatino, Songti SC, Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #3f6248;
+}
+
+[id] {
+  scroll-margin-top: 8.5rem;
+}
+
+.btn-light {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: #f3eee4;
+  color: #10241b;
+  transition: background-color 0.15s ease;
+}
+
+.btn-light:hover {
+  background: #ffffff;
+}
+
+select.field {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #1b3a2b 50%),
+    linear-gradient(135deg, #1b3a2b 50%, transparent 50%);
+  background-position: calc(100% - 1.2rem) 1.2rem, calc(100% - 0.85rem) 1.2rem;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 2.4rem;
+}
+
+.form-split {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .form-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pillar-index {
+  font-family: Fraunces, Palatino Linotype, Palatino, Songti SC, Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #3f6248;
+}

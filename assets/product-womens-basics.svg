@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" role="img" aria-label="Graphic plate for women's briefs, wireless bras, and seamless basics">
+  <rect width="800" height="600" fill="#E7EFE3"/>
+  <circle cx="150" cy="130" r="140" fill="#D5E2D2"/>
+  <rect x="118" y="168" width="300" height="280" rx="96" fill="#FBF8F3"/>
+  <rect x="164" y="214" width="208" height="196" rx="72" fill="#C5D5C2"/>
+  <rect x="196" y="246" width="144" height="22" rx="11" fill="#F3EEE4"/>
+  <path d="M500 188c78-52 168-40 214 18" stroke="#1B3A2B" stroke-width="26" stroke-linecap="round"/>
+  <path d="M528 250c36 62 92 96 164 96" stroke="#3F6248" stroke-width="16" stroke-linecap="round"/>
+  <path d="M70 430c26-16 48-6 60 16-24 8-44 6-60-16Z" fill="#1B3A2B"/>
+  <path d="M84 440c18 4 34 12 46 22" stroke="#F3EEE4" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="704" cy="470" r="8" fill="#9C7A45"/>
+</svg>
